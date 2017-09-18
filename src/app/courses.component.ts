@@ -4,10 +4,9 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'courses',
     template: `
-        <button class="bnt btn-primary">Save</button>
+        <button class="bnt btn-primary" [class.active]="isActive">Save</button>
     `
 })
 export class CoursesComponent {
-    title = "List of courses";
-    imageUrl = "http://fakeimg.pl/400x200/";
+    isActive = true;
 }
